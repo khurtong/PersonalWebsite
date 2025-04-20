@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>
+  <title>Personal Website</title>
+  <link rel="icon" href="images/spiderman.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #4facfe;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .about-img {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    #contact {
+      background: #f2f2f2;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+
+    #contact h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    #contact p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      height: 50px;
+      width: 50px;
+      margin: 0 10px;
+    }
+
+    .hobbies {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .hobbies ul {
+      display: inline-block;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .hobby-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .hobby-images img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .home-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .home-text {
+      flex: 1 1 300px;
+    }
+
+    .home-image {
+      flex: 1 1 300px;
+      max-width: 300px;
+    }
+
+    .home-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .logo {
+        height: 40px;
+        width: 40px;
+      }
+
+      .home-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-image {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-container">
+      <div class="home-text">
+        <p>Hello! I'm Khurt Ong, 18 years old from Kapt Pepe, Cabanatuan City, Nueva Ecija. A passionate first-year CICT student at NEUST. I have a growing interest in web development and programming. My journey in tech is just beginning, but I'm already developing strong skills in HTML, CSS.</p>
+        <p>My goal is to become a full-stack developer and create impactful software that helps people. I'm excited to learn more every day and take on projects that challenge me to grow.</p>
+      </div>
+      <div class="home-image">
+        <img src="images/me.jpg" alt="Khurt and Botch Pogi">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="images/khurt.jpg" alt="Khurt" class="about-img">
+    <p>Hi! I'm Khurt, a first-year student at NEUST, taking up CICT. I'm passionate about learning programming and creating awesome things online. I'm currently diving into web development and improving my coding skills every day.</p>
+    <div class="hobbies">
+      <h3>My Hobbies</h3>
+      <ul>
+        <li>Playing video games</li>
+        <li>Listening to music</li>
+        <li>Going to the gym</li>
+        <li>Reading Manhwa/Manga</li>
+      </ul>
+      <div class="hobby-images">
+        <img src="images/valorant.jpg" alt="Hobby 1">
+        <img src="images/music.jpg" alt="Hobby 2">
+        <img src="images/gym.jpg" alt="Hobby 3">
+        <img src="images/manhwa.jpg" alt="Hobby 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>My personal website built using HTML and CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Coming Soon!</h3>
+        <p>More projects on the way. Stay tuned!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Reach me through any of the platforms below:</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> khurtong05ong@gmail.com</p>
+      <p><strong>Phone:</strong> 0954-286-6390</p>
+      <a href="https://www.facebook.com/kkrtongg"><img src="images/Facebook.jpg" class="logo" alt="Facebook"></a>
+      <a href="https://www.instagram.com/krt.ong_"><img src="images/Instagram.jpg" class="logo" alt="Instagram"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="copyright">&copy; 2025 Khurt. All rights reserved.</p>
+  </footer>
+</body>
+</html>
