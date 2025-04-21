@@ -2,7 +2,7 @@
 <head>
   <title>Personal Website</title>
   <link rel="icon" href="images/spiderman.jpg" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
       margin: 0;
@@ -42,13 +42,13 @@
       font-weight: bold;
       font-size: 0.95em;
     }
-    
+
     nav a:hover {
       background-color: rgba(255, 255, 255, 0.2);
       padding: 5px 10px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-}
+    }
 
     section {
       padding: 40px 20px;
@@ -175,6 +175,29 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+  
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: #4facfe;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      transition: background-color 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #006aff;
+    }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 2em;
@@ -197,25 +220,6 @@
 
       .home-image {
         max-width: 80%;
-      }
-      #scrollTopBtn {
-        position: fixed;
-        bottom: 40px;
-        right: 30px;
-        background-color: #4facfe;
-        color: white;
-        padding: 12px 16px;
-        border: none;
-        border-radius: 50%;
-        font-size: 20px;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        z-index: 100;
-      }
-
-      #scrollTopBtn:hover {
-        background-color: #006aff;
       }
     }
   </style>
@@ -289,7 +293,10 @@
       <a href="https://www.instagram.com/krt.ong_"><img src="images/Instagram.jpg" class="logo" alt="Instagram"></a>
     </div>
   </section>
+
+
   <a href="#top" id="scrollTopBtn" title="Back to top">↑</a>
+
   <footer>
     <p class="copyright">&copy; 2025 Khurt. All rights reserved.</p>
   </footer>
