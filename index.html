@@ -198,10 +198,30 @@
       .home-image {
         max-width: 80%;
       }
+      #scrollTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        background-color: #4facfe;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 50%;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        z-index: 100;
+      }
+
+      #scrollTopBtn:hover {
+        background-color: #006aff;
+      }
     }
   </style>
 </head>
 <body>
+  <a id="top"></a>
   <header>
     <h1>Welcome to My Personal Website</h1>
     <nav>
@@ -273,5 +293,6 @@
   <footer>
     <p class="copyright">&copy; 2025 Khurt. All rights reserved.</p>
   </footer>
+  <a href="#top" id="scrollTopBtn" title="Back to top">↑</a>
 </body>
 </html>
